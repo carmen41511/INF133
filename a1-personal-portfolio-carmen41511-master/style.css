@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+.wrapper{
+    margin: 0 auto;
+    width: 1000px;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/profile\ pic1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+.content-area{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    text-align: center;
+}
+.content h3{
+    margin-top: 100px;
+    font-family: 'Ephesis', cursive;
+    color:#fff
+}
+.content h1{
+    margin-bottom: 100px;
+    font-family: "Slabo";
+    color:#fff
+}
+header {
+	height: 80px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+    align-items: center;
+    padding-left: 10%;
+}
+nav {
+	margin:0 auto;
+	line-height: 90px;
+}
+nav a {
+	text-decoration: none;
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+}
+
+/* main content */
+.container{
+    width: 70%;
+    margin: 50px auto;
+    padding: 10px;
+}
+.container .box{
+    width: 100%;
+    padding: 25px;
+    background: #fff;
+    margin-top: 0px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px -3px rgba(0, 0, 0, .1); */
+}
+a.button{
+    border:none;
+    outline:none;
+    padding:15px;
+    margin-top: 100px;
+    border-radius: 8px;
+    color:#eee;
+    font-size: 18px;
+    cursor: pointer;    
+    background:rgb(36, 32, 27);
+    
+}
+p {
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+}
+ol{
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+}
+h2.lines {
+    text-align: center;
+    /* font-size: 3vw; */
+}
+h2.lines::before,
+h2.lines::after{
+    display: inline-block;
+    content: "";
+    border-top: .3rem solid black;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+
+}
+
+  video{
+      width: 100%;
+  }
+  h2{
+      padding-top: 20px;
+      text-align: center;}
+  h3{text-align: center;}
+
+.col-md-8 p{
+    font-family: 'Noto Sans', sans-serif;
+}
+.col-md-8 h2{
+    font-family: 'Noto Sans', sans-serif;
+    color: darkcyan;
+}
+.col-md-8 h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: medium;
+    color: darksalmon;
+}
+.col-md-8 li{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+@media all and (max-width: 850px) {
+    h2.lines {
+        text-align: center;
+        font-size: 5vw;
+    }
+    h2.lines::before,
+    h2.lines::after{
+        display: inline-block;
+        content: "";
+        border-top: .3rem solid black;
+        width: 2rem;
+        margin: 0 1rem;
+        transform: translateY(-0.5rem);
+    }
+    }
+@media all and (max-width: 750px) {
+    .background{
+        width: 100%;
+        height: 70vh;
+        background-image: url(img/profile\ pic.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+    }
+}
+@media all and (max-width: 1120px) {
+.wrapper{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+}
