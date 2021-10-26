@@ -7,15 +7,6 @@
     margin: 0 auto;
     width: 1000px;
 }
-/* .background{
-    width: 100%;
-    height: 100vh;
-    background-image: url(img/profile\ pic1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-} */
 header {
 	height: 80px;
 	background: #262626;

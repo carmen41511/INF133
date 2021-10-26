@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "client": "^0.0.1",
+    "webserver": "^5.0.1"
+  }
+}
