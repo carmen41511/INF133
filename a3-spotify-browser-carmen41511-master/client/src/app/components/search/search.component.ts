@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SpotifyService } from '../../services/spotify.service';
 import { ArtistData } from '../../data/artist-data';
 import { AlbumData } from '../../data/album-data';
 import { TrackData } from '../../data/track-data';
 import { ResourceData } from '../../data/resource-data';
+import { ProfileData } from 'src/app/data/profile-data';
 
 @Component({
   selector: 'app-search',
@@ -24,6 +25,12 @@ export class SearchComponent implements OnInit {
 
   search() {
     //TODO: call search function in spotifyService and parse response
-  }
 
+    // let s:Promise<ResourceData[]> = this.spotifyService.searchFor(this.searchCategory,this.searchString)
+    this.spotifyService.searchFor(this.searchCategory,this.searchString)
+    .then((d: ResourceData[]) => {
+      this.resources = d;
+      console.log(this.resources);
+    });
+  }
 }

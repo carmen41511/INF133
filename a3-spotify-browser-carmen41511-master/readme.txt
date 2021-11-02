@@ -17,7 +17,13 @@
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
 
-
+https://www.youtube.com/watch?v=Mz8lb81AAe4
+https://www.youtube.com/watch?v=DYNzLRsixeo
+https://www.youtube.com/watch?v=Du3p6QYGs3A
+https://www.youtube.com/watch?v=8ZlrORYOl_0
+https://www.youtube.com/watch?v=4fKa13TTn7E
+https://stackoverflow.com/questions/45428659/how-to-pull-value-out-of-promise
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 

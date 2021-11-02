@@ -13,6 +13,8 @@ export class CarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+    // console.log("carousle init");
+    // console.log("value of resources = ", this.resources);
 
+  }
 }
