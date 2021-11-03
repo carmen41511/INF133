@@ -16,8 +16,7 @@ export class AboutComponent implements OnInit {
   constructor(private spotifyservice: SpotifyService) { }
 
   ngOnInit() {
-    let profileP: Promise<ProfileData> = this.spotifyservice.aboutMe();
-    profileP.then(profile => {
+    this.spotifyservice.aboutMe().then(profile => {
       this.name = profile.name;
       this.profile_pic = profile.imageURL;
       this.profile_link = profile.spotifyProfile;

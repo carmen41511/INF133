@@ -13,15 +13,15 @@ export class CarouselCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("card init wiht", this.resource);
+    console.log("card with", this.resource);
     if (this.resource.category === "artist"){
-      this.url = `artist/${this.resource.url}`;
+      this.url = `artist/${this.resource.id}`;
     }
     else if (this.resource.category === "album"){
-      this.url =`track/${this.resource.url}`;
+      this.url =`album/${this.resource.id}`;
     }
     else{
-      this.url = `album/${this.resource.url}`;
+      this.url = `track/${this.resource.id}`;
     }
   }
 
