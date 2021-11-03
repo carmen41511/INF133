@@ -30,7 +30,7 @@ export class SearchComponent implements OnInit {
     this.spotifyService.searchFor(this.searchCategory,this.searchString)
     .then((d: ResourceData[]) => {
       this.resources = d;
-      console.log(this.resources);
+      // console.log(this.resources);
     });
   }
 }
