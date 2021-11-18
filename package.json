@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "client": "^0.0.1",
+    "sass": "^1.43.4",
     "webserver": "^5.0.1"
   }
 }

@@ -13,7 +13,7 @@ export class TrackListComponent implements OnInit {
 
   constructor() { }
   ngOnInit() {
-    console.log("init track list with ", this.tracks)
+    console.log("track list ", this.tracks)
   }
 
 }

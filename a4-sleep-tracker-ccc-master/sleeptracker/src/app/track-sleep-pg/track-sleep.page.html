@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<div class="background-container">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="light">
+        Good Evening
+      </ion-card-title>
+      <ion-card-title color="light" font-size=larger>
+        23:50 PM
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row 
+      class="ion-justify-content-center">
+        <h1>Sleep Duration:</h1>
+        <h2>{{elapsed.h}}:{{elapsed.m}}:{{elapsed.s}}</h2>
+      </ion-row>
+      <ion-button *ngIf="state === 'stop'" (click)="startTimer()">
+        Start Tracking
+      </ion-button>
+      <!-- <ng-template #running> -->
+        <!-- <p>hello</p> -->
+        <ion-button
+         *ngIf="state === 'start'"
+         (click)="stopTimer()" color="danger">Stop Tracking</ion-button>
+      <!-- </ng-template> -->
+      <p>{{this.date.summaryString()}}</p>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+
+
+<!-- <div class="timer">
+  <ion-card>
+     
+  </ion-card>
+</div>
+
+<!<ion-content>
+  <h1>{{ time | async }}</h1>
+  <ion-button (click)="startTimer(5)">Start Sleeping</ion-button>
+</ion-content>  -->
+
