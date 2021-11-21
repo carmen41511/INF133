@@ -19,6 +19,15 @@ const routes: Routes = [
     path: 'stat-pg',
     loadChildren: () => import('./stat-pg/stat-pg.module').then( m => m.StatPgPageModule)
   },
+  {
+    path: 'finish-log-pg',
+    loadChildren: () => import('./finish-log-pg/finish-log-pg.module').then( m => m.FinishLogPgPageModule)
+  },
+  {
+    path: 'pages',
+    loadChildren: () => import('./pages/pages.module').then( m => m.PagesPageModule)
+  },
+
 ];
 
 @NgModule({

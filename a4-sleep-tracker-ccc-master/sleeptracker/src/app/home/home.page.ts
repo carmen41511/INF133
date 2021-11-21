@@ -14,9 +14,7 @@ import {Router} from '@angular/router';
 export class HomePage {
 
 	constructor(public sleepService:SleepService,
-				private router: Router) {
-
-	}
+				private router: Router) {}
 
 	ngOnInit() {
 		console.log(this.allSleepData);
@@ -29,7 +27,7 @@ export class HomePage {
 
 	trackSleepPg(){
 		//click on track sleep button and lead user to track sleep page
-		this.router.navigate(['/track-sleep'])
+		this.router.navigate(['sleep-log-pg'])
 	  }
 
 }

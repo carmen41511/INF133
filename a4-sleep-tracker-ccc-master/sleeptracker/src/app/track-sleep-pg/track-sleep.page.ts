@@ -52,7 +52,7 @@ export class TrackSleepPage  {
   stopTimer() {
     this.stop_time = new Date();
     this.date = new OvernightSleepData(this.start_time,this.stop_time);
-    this.date.summaryString();
+    // this.date.summaryString
 
 
     this.state = 'stop';
